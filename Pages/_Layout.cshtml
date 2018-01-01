@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebGuideApplication</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/css/site.css" rel="stylesheet" />
+          
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-xl-3 col-lg-2 col-md-1">
+                1
+            </div>
+            <div class="col-xl-5 col-lg-8 col-md-9">
+                Header
+            </div>
+            <div class="col-xl-1">
+                <img src="~/images/banner.jpg" />
+            </div>
+            <div class="col-xl-3 col-lg-2 col-md-1">
+                3
+            </div>
+        </div>
+
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-page="/Index">דף הבית <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            מדריכי תירות
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" asp-page="/travel_guides/north_italy">מדריך לצפון איטליה</a>
+                            <a class="dropdown-item" asp-page="/travel_guides/NY">המדריך לניו ניורק</a>
+                            <a class="dropdown-item" asp-page="/travel_guides/dc">מדריך לוושינגטון הבירה</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        @RenderBody()
+            
+        
+        <!-- Footer --->
+        <footer>
+            <div>
+                <section id="opli_channels">
+                    <h3>מדריכי תיירות</h3>
+
+                    <a href="more/ny.aspx" class="BottomMenuLink">מדריך לניו ניורק</a>
+                    <br />
+                    <a href="more/dc.aspx" class="BottomMenuLink">מדריך לוושינגטון הבירה</a>
+                    <br />
+                    <a href="more/boston.aspx" class="BottomMenuLink" ">מדריך לבוסטון</a>
+                    <br />
+                    <a href="more/california.aspx" class="BottomMenuLink">מדריך לקליפורניה</a>
+                    <br />
+                    <a href="more/italy.htm" class="BottomMenuLink">מדריך לצפון איטליה</a>
+                    <br />
+                    <a href="more/switzerland.aspx" class="BottomMenuLink">מדריך לשוויץ</a>
+                    <br />
+                    <a href="more/tips.aspx" class="BottomMenuLink">אוסף טיפים למטייל בעולם</a>
+                    <br />
+                    <a href="more/tablet_tour.aspx" class="BottomMenuLink">לטייל עם הטאבלט והסמארטפון</a>
+                    <br />
+                    <a href="more/ski_guide.aspx" class="BottomMenuLink">מדריך סקי לגולש המתחיל</a>
+                    <br />
+                    <a href="more/ski_resorts.aspx" class="BottomMenuLink">מדריך אתרי סקי בעולם</a>
+
+                </section>
+
+                <section id="site">
+                    <h3>מדריכים טכנולוגיים</h3>
+
+                    <a href="sitebuild_guide/guide1.htm" class="BottomMenuLink">מדריך בניית אתר אינטרנט</a>
+                    <br />
+                    <a href="blog_guide/b_guide1.htm" class="BottomMenuLink">מדריך לפתיחת בלוג באינטרנט</a>
+
+
+                </section>
+
+                <section>
+                    <h3>תיירות ופנאי</h3>
+
+                    <a href="guides/dates_lifestyle_guides/wine_guide.aspx" class="BottomMenuLink">המדריך הבסיסי ליין</a>
+                    <br />
+                    <a href="more/date.htm" class="BottomMenuLink">המדריך למקומות לדייטים</a>
+
+
+                </section>
+
+                <section id="company">
+                    <h3>על האתר</h3>
+
+                    <a href="about_me.aspx" class="BottomMenuLink">אודות</a>
+                    <br />
+                    <a href="contact.aspx" class="BottomMenuLink">צור קשר</a>
+                    <br />
+
+                    <a href="Default_old.aspx" class="BottomMenuLink">מדריך רשת 2</a>
+                    <br />
+
+                </section>
+
+                <section id="about">
+                    <h3>אודות האתר</h3>
+                    <p>
+                        מדריך רשת הוא מדריך מקיף בנושאי תיירות,
+                        .טיולים בעולם, טכנולוגיה, מדיה חברתית, בניית אתרים, תחזוקת המחשב, ועוד
+
+                    </p>
+                </section>
+
+            </div>
+
+            <p>&copy; 2017 - WebGuideApplication</p>
+
+        </footer>
+        <!-- *** End Footer *** -->
+    </div>
+
+   
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+</body>
+</html>
